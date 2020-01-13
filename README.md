@@ -10,9 +10,9 @@ webpack --config webpack-client.config.js
 
 webpack --config webpack-server.config.js
 
-export VIEW=`pwd`
+export VIEW=``pwd``
 
-cd ./back
+cd ../back
 
 npm start
 
