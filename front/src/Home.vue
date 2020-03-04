@@ -1,13 +1,20 @@
 <template>
     <div>
         Hello {{  name }}
+        <div>
+            <Grocery />
+        </div>
     </div>
 </template>
 <script lang="ts">
-    import Vue from "vue";
-    import Component from "vue-class-component";
+    import { Component, Vue } from "vue-property-decorator";
+    import Grocery from "./Grocery.vue";
 
-    @Component
+    @Component({
+        components: {
+            Grocery
+        }
+    })
     export default class Home extends Vue{
         name: string;
 
